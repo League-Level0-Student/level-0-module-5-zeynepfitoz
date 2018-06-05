@@ -16,13 +16,13 @@ public class Code4Life {
 	
 	//1.  Ask the user how many hours they spent coding this week.
 	String answer=JOptionPane.showInputDialog("How many hours have you spent coding this week");
-	
+	int num=Integer.parseInt(Answer);
 	//2.  If it is less than or equal to 2, tell them to stop watching YouTube and write code instead.
-	if (answer<2){
-		JOptionPane,showMessageDialog(null,"Stop watching YouTube and start coding you idiot!");
+	if (Answer<2){
+		JOptionPane.showMessageDialog(null,"Stop watching YouTube and start coding you idiot!");
 	}
 	//3.  If it is greater than or equal to 3 AND less than or equal to 5, tell them they're a Code Ninja
-	if(answer>3) {
+	if(Answer>3) {
 		JOptionPane.showMessageDialog(null, "You are a code ninja");
 	}
 	//4.  If it is more than 5, call the method below to play the Batman theme song.  

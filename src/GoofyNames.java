@@ -10,6 +10,7 @@ public class GoofyNames {
 		String goofyName = "";
 
 		// 1. Ask the user to enter their name
+		String name=JOptionPane.showInputDialog("What is your name?");
 
 		// 2. Print upper case name to the console using .toUpperCase()
 		//    Run your program to see that this works.

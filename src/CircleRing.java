@@ -18,7 +18,7 @@ public class CircleRing {
 
         // 3. Put the robot's pen down
     	r2d2.penDown();
-
+    	r2d2.setRandomPenColor();
         // 4. Set the robot’s speed to 10
     	r2d2.setSpeed(10);
 
@@ -34,11 +34,12 @@ public class CircleRing {
 
         // 8. If the counter i is divisible by 20 (hint: use mod operator  %)..
     		if (i%20==0) {
-    	
+    			
     		
 
 		// 9. do steps 10 and 11 exactly 360 times (use j as the counter)
     			for (int j = 0; j < 360; j++) {
+    				r2d2.setRandomPenColor();
 					
 				
 
@@ -47,6 +48,7 @@ public class CircleRing {
 
 				// 11. Turn the robot 1 degree
     			r2d2.turn(1);
+    			
     		}
     		}
     	}
